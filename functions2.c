@@ -39,7 +39,8 @@ int flags, int width, int precision, int size)
 		num_addrs /= 16;
 		length++;
 	}
-											if ((flags & F_ZERO) && !(flags & F_MINUS))
+
+	if ((flags & F_ZERO) && !(flags & F_MINUS))
 		padd = '0';
 	if (flags & F_PLUS)
 		extra_c = '+', length++;
@@ -118,7 +119,7 @@ int flags, int width, int precision, int size)
 	UNUSED(flags);
 	UNUSED(width);
 	UNUSED(size);
-	
+
 	str = va_arg(types, char *);
 
 	if (str == NULL)
