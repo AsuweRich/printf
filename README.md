@@ -11,7 +11,7 @@ This function is part of the standard library and to use it we must specify the 
 Writes the C string pointed by format to the standard output (stdout). If format includes format specifiers (subsequences beginning with %), the additional arguments following format are formatted and inserted in the resulting string replacing their respective specifiers.
 
 
-Parameters
+PARAMETERS
 format -> C string that contains the text to be written to stdout.
 
 
@@ -38,7 +38,7 @@ On success, the total number of characters written is returned. If a writing err
 
 
 
-The tasks.
+THE TASKS.
 
 -[x] I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life. Write a function that produces output according to a format.
 
@@ -55,10 +55,9 @@ format is a character string. The format string is composed of zero or more dire
 -[x] Education is when you read the fine print. Experience is what you get if you don't Handle the following conversion specifiers: -- d --i
 
 
-
 Man_3_printf.
 
-Functions we use.
+FUNCTIONS WE USE.
 
 int _putchar(char c); /*writes the character c to stdout */
 int _printf(const char *format, ...);/* function that produces output according to a format.*/
@@ -67,9 +66,8 @@ int print_string(va_list s);/*writes the character c to stdout */
 int print_int(va_list i);/*function that prints an integer */
 int print_dec(va_list d);/* function that prints an decimal*/
 
-Flowchart.
 
-How to use.
+HOW TO USE.
 
 Complilation
 
@@ -79,12 +77,8 @@ All of the .c files along with a main.c file are to be compiled with gcc 4.8.4 o
 
 The files will be compiled this way:
 
-
-
 gcc -Wall -Werror -Wextra -pedantic *.c
-
 Use.
-
 In the main.c file, use the _printf function like so:
 
 
@@ -95,7 +89,6 @@ In the main.c file, use the _printf function like so:
  * main - main function of program
  * Return: always 0
  */
-
 int main(void)
 {
 	int num;
@@ -114,4 +107,5 @@ linux>$
 
 Contributors
 Asuwe Richard Wuese
+
 Amadi Mariana
