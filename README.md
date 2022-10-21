@@ -2,10 +2,10 @@
 ```js
 int printf ( const char * format, ... );
 ```
-This is the first group project that we have at Holberton School, which consists of replicating the printf (3) function of language c, calling it this way _printf.
+This is the first group project that we have at Holberton School, which consists of replicating the printf (3) function of language c, calling it this way `_printf`
 
 
-This function is part of the standard library and to use it we must specify the header file <stdio.h>.
+This function is part of the standard library and to use it we must specify the header file `<stdio.h>`.
 
 
 Writes the C string pointed by format to the standard output (stdout). If format includes format specifiers (subsequences beginning with %), the additional arguments following format are formatted and inserted in the resulting string replacing their respective specifiers.
@@ -38,10 +38,10 @@ On success, the total number of characters written is returned. If a writing err
 
 
 
-## THE TASKS.
+### THE TASKS.
 
--[x] I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life. Write a function that produces output according to a format.
-
+-[x] I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life. 
+Write a function that produces output according to a format.
 
 
 Prototype:int _printf(const char *format, ...);
@@ -55,9 +55,9 @@ format is a character string. The format string is composed of zero or more dire
 -[x] Education is when you read the fine print. Experience is what you get if you don't Handle the following conversion specifiers: -- d --i
 
 
-Man_3_printf.
+## Man_3_printf.
 
-## FUNCTIONS WE USE.
+#### FUNCTIONS WE USE.
 ```js
 int _putchar(char c); /*writes the character c to stdout */
 int _printf(const char *format, ...);/* function that produces output according to a format.*/
@@ -67,11 +67,11 @@ int print_int(va_list i);/*function that prints an integer */
 int print_dec(va_list d);/* function that prints an decimal*/
 ```
 
-## HOW TO USE.
+#### HOW TO USE.
 
 __Complilation__
 
-All of the .c files along with a main.c file are to be compiled with gcc 4.8.4 on Ubuntu 14.04 LTS with the flags -Wall Werror -Westra and -pedantic.
+All of the .c files along with a main.c file are to be compiled with `gcc 4.8.4` on __Ubuntu 14.04 LTS__ with the flags `-Wall Werror -Westra` and `-pedantic`.
 
 
 
@@ -79,8 +79,8 @@ The files will be compiled this way:
 ```js
 gcc -Wall -Werror -Wextra -pedantic *.c
 ```
-## Use:
-In the main.c file, use the _printf function like so:
+### Use:
+In the **main.c file,** use the `_printf` function like so:
 
 ```js
 #include "main.h"
